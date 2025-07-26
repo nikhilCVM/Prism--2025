@@ -1399,3 +1399,137 @@ input.tgg-title {
     background-position: center;
     background-repeat: no-repeat;
 }
+/* chatgpt css*/
+
+/* ================= Responsive Fixes for Prism Interiors ================= */
+
+/* 1. Ensure all images and videos scale properly */
+img,
+video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* 2. Responsive font sizes and spacing */
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: Jost, sans-serif;
+}
+
+/* 3. Fix hardcoded widths */
+.container,
+.container-fluid {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* 4. Override hero section image height */
+.heroSectionImg {
+  height: auto;
+  object-fit: cover;
+}
+
+/* 5. Fix typography for smaller screens */
+@media screen and (max-width: 768px) {
+  .heroSectionTitle {
+    font-size: 28px;
+    line-height: 38px;
+  }
+  .aboutUsHeading,
+  .whyChooseUsHeading,
+  .servicesHeading,
+  .ClientsHeading {
+    font-size: 30px;
+    text-align: center;
+  }
+  .aboutUsDescription,
+  .whyChooseUsDescription,
+  .servicesDescription,
+  .extraServicesDescription {
+    font-size: 16px;
+    text-align: justify;
+  }
+  .heroButton,
+  .box1,
+  .btn {
+    font-size: 16px;
+    padding: 10px 16px;
+  }
+  iframe {
+    width: 100% !important;
+    height: auto !important;
+  }
+  .project-info h3 a {
+    font-size: 18px;
+  }
+  .project-item:before {
+    height: 50%;
+  }
+}
+
+/* 6. Flex column stacking on mobile */
+@media screen and (max-width: 768px) {
+  .flex-column,
+  .flex-lg-row,
+  .flex-md-column {
+    flex-direction: column !important;
+  }
+  .d-flex {
+    flex-wrap: wrap;
+  }
+  .w-100 {
+    width: 100% !important;
+  }
+}
+
+/* 7. Adjust margins and paddings */
+@media screen and (max-width: 768px) {
+  .px-5,
+  .mx-5 {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  .pt-5,
+  .py-5 {
+    padding-top: 2rem !important;
+  }
+  .pb-5,
+  .py-5 {
+    padding-bottom: 2rem !important;
+  }
+}
+
+/* 8. Responsive logos and icons */
+.feature img,
+.feature i,
+.feature2 img {
+  max-width: 80px;
+  height: auto;
+}
+
+/* 9. Make sliders full width */
+.logos-slide-wrapper,
+.logos-slide {
+  width: 100% !important;
+  overflow-x: auto;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+/* 10. Footer responsiveness */
+footer {
+  padding: 2rem 1rem;
+}
+footer .container {
+  text-align: center;
+}
+
+/* ========================================================= */
+/* Add these to the end of your style.css or as a new override file */
